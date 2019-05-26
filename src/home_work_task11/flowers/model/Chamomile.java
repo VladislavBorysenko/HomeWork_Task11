@@ -1,39 +1,16 @@
 package home_work_task11.flowers.model;
 
-public abstract class Chamomile {
-    int price;
-    int stemLength;
-    String freshness;
-
-    public Chamomile(int price, int stemLength, String freshness) {
-        this.price = price;
-        this.stemLength = stemLength;
-        this.freshness = freshness;
+public  class Chamomile extends Flowers {
+    public Chamomile(int price,int stemLength,String freshness){
+        super(price,stemLength,freshness);
     }
 
-    public int getPrice() {
-        return price;
+    @Override
+    public String toString() {
+        return "Chamomile{" +
+                "price=" + price +
+                ", stemLength=" + stemLength +
+                ", freshness='" + freshness + '\'' +
+                '}';
     }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public int getStemLength() {
-        return stemLength;
-    }
-
-    public void setStemLength(int stemLength) {
-        this.stemLength = stemLength;
-    }
-
-    public String getFreshness() {
-        return freshness;
-    }
-
-    public void setFreshness(String freshness) {
-        this.freshness = freshness;
-    }
-
-
 }

@@ -1,6 +1,6 @@
 package home_work_task11.new_year_present.model;
 
-public abstract class Sweet {
+public  class Sweet {
     double weight;
     double massOfSugar;
 

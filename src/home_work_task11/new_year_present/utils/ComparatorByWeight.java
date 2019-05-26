@@ -1,6 +1,6 @@
 package home_work_task11.new_year_present.utils;
 
-import com.android.school.oop.task11.new_year_present.model.Sweet;
+import home_work_task11.new_year_present.model.Sweet;
 
 import java.util.Comparator;
 

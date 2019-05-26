@@ -1,11 +1,11 @@
 package home_work_task11.new_year_present;
 
-import com.android.school.oop.task11.new_year_present.model.*;
-import com.android.school.oop.task11.new_year_present.utils.ComparatorByWeight;
+import home_work_task11.new_year_present.model.*;
+import home_work_task11.new_year_present.utils.ComparatorByWeight;
 
 import java.util.Arrays;
 
-import static com.android.school.oop.task11.new_year_present.utils.MyRandom.rnd;
+import static home_work_task11.new_year_present.utils.MyRandom.rnd;
 
 
 public class Application {
