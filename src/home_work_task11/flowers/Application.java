@@ -13,6 +13,7 @@ public class Application {
         Flowers[] flowerArr = new Flowers[NUMBER_OF_FLOWERS];
         flowerArr = generateFlowerArray();
         sortByAlphavit(flowerArr);
+        calculateResultPrice(flowerArr);
 
     }
 
@@ -21,14 +22,14 @@ public class Application {
         Flowers[] flowers = new Flowers[NUMBER_OF_FLOWERS];
 
         flowers[0] = new Tulip(10, 12, "medium");
-        flowers[1] = new Chamomile(12, 15, "small");
+        flowers[1] = new Chamomile(12, 15, "low");
         flowers[2] = new Archidea(11, 13, "large");
         flowers[3] = new Rose(9, 11, "large");
         flowers[4] = new Violet(10, 10, "medium");
-        flowers[5] = new Tulip(13, 12, "small");
+        flowers[5] = new Tulip(13, 12, "low");
         flowers[6] = new Chamomile(10, 12, "medium");
         flowers[7] = new Rose(11, 11, "large");
-        flowers[8] = new Archidea(8, 14, "small");
+        flowers[8] = new Archidea(8, 14, "low");
         flowers[9] = new Tulip(9, 14, "medium");
 
         return flowers;
@@ -42,4 +43,16 @@ public class Application {
 
         }
     }
+
+    private static double calculateResultPrice(Flowers[] flowerArr) {
+        int  resultPrice = 0;
+        for (int i = 0; i < flowerArr.length; i++) {
+            resultPrice += flowerArr[i].getPrice();
+        }
+        System.out.println("Resoult Price ="+resultPrice);
+        return resultPrice;
+    }
+
+
+
 }
